@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to get your Anthropic API key — Clipbench</title>
+<meta name="description" content="Step-by-step guide to creating an Anthropic API key for Clipbench. Takes about 2 minutes, no subscription.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#101014; --card:#1c1c24; --border:#2a2a35; --text:#ececf1; --muted:#9a9aae; --accent:#f5b52e; --accent-dark:#17130a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; font-size:17px; line-height:1.7; }
+  .wrap { max-width:720px; margin:0 auto; padding:40px 24px 80px; }
+  a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:32px; margin:26px 0 10px; letter-spacing:-.3px; }
+  .sub { color:var(--muted); margin-bottom:34px; }
+  .step { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px 24px; margin-bottom:16px; display:flex; gap:16px; }
+  .step .n { flex:0 0 34px; height:34px; border-radius:10px; background:var(--accent); color:var(--accent-dark); font-weight:800; display:flex; align-items:center; justify-content:center; }
+  .step h2 { font-size:18px; margin-bottom:6px; }
+  .step p, .step li { color:var(--muted); font-size:15.5px; }
+  .step ul { padding-left:20px; margin-top:6px; }
+  code { background:#0b0b0f; border:1px solid var(--border); padding:2px 7px; border-radius:6px; font-size:14px; }
+  .callout { border-left:3px solid var(--accent); background:rgba(245,181,46,.06); border-radius:0 12px 12px 0; padding:16px 20px; margin:28px 0; }
+  .callout p { color:var(--muted); font-size:15.5px; }
+  .back { font-size:15px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Back to Clipbench</a>
+  <h1>Getting your Anthropic API key</h1>
+  <p class="sub">Takes about 2 minutes. This is the "bring your own key" part of Clipbench — you pay Anthropic directly for AI usage, at cost, with no subscription and no middleman markup.</p>
+
+  <div class="step"><div class="n">1</div><div>
+    <h2>Create an Anthropic Console account</h2>
+    <p>Go to <a href="https://console.anthropic.com" rel="noopener">console.anthropic.com</a> and sign up with email or Google. Note: this is the <em>developer console</em> — it's separate from the Claude chat app, even if you already pay for that.</p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div>
+    <h2>Add credits</h2>
+    <p>Open <strong>Billing</strong> and buy credits. <strong>$5 is plenty to start</strong> — analyzing a full 90-minute podcast typically costs a few cents to a few tens of cents depending on the model you choose in Clipbench, so $5 covers dozens of videos. Credits only get used when you analyze a video; transcription in Clipbench is local and always free.</p>
+  </div></div>
+
+  <div class="step"><div class="n">3</div><div>
+    <h2>Set a spend limit (optional, recommended)</h2>
+    <p>On the same Billing page you can set a monthly spend cap. Set it to $5 or $10 and you can never be surprised — the worst case is Clipbench telling you the limit was reached.</p>
+  </div></div>
+
+  <div class="step"><div class="n">4</div><div>
+    <h2>Create the key</h2>
+    <p>Go to <strong>API Keys → Create Key</strong>. Name it anything ("Clipbench" works), create it, and <strong>copy it immediately</strong> — keys start with <code>sk-ant-</code> and are shown only once. If you lose it, just delete it and make a new one.</p>
+  </div></div>
+
+  <div class="step"><div class="n">5</div><div>
+    <h2>Paste it into Clipbench</h2>
+    <p>Open Clipbench → Settings → paste the key → hit <strong>Test</strong>. If it says the key works, you're done forever — there's nothing to renew.</p>
+  </div></div>
+
+  <div class="callout">
+    <p><strong>Is my key safe in Clipbench?</strong> The key is stored only on your computer and is only ever sent to Anthropic's API. Clipbench has no servers — there's nowhere else for it to go. See the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+
+  <div class="callout">
+    <p><strong>Which model should I pick in Clipbench?</strong> Claude Opus 5 gives the sharpest clip picks and captions; Sonnet is ~40% of the cost and very good; Haiku is the budget option for high-volume clipping. You can switch anytime in Settings — the estimate shown before each analysis tells you what that video will cost.</p>
+  </div>
+
+  <p>Stuck? Email <a href="mailto:support@clipbench.app">support@clipbench.app</a> and we'll get you going.</p>
+</div>
+</body>
+</html>
