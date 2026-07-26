@@ -6,6 +6,28 @@
 <title>Clipbench — Turn long videos into clips. Pay once.</title>
 <meta name="description" content="Clipbench turns podcasts, streams, and talks into ready-to-post vertical clips with AI clip-finding and word-timed captions. Pay once. Runs on your machine.">
 <link rel="icon" href="icon.png">
+<link rel="canonical" href="https://clipbench.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clipbench.app/">
+<meta property="og:title" content="Clipbench — Turn long videos into clips. Pay once.">
+<meta property="og:description" content="AI clip-finding, word-timed captions, 100% local processing. No subscription, no uploads, no watermarks. $49 once.">
+<meta property="og:image" content="https://clipbench.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clipbench — Turn long videos into clips. Pay once.">
+<meta name="twitter:description" content="AI clip-finding, word-timed captions, 100% local processing. No subscription. $49 once.">
+<meta name="twitter:image" content="https://clipbench.app/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clipbench",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "MultimediaApplication",
+  "description": "Turns long videos into ready-to-post vertical clips with AI clip-finding and word-timed captions. Runs locally; pay once.",
+  "offers": { "@type": "Offer", "price": "49", "priceCurrency": "USD" },
+  "url": "https://clipbench.app"
+}
+</script>
 <style>
   :root {
     --bg: #101014; --bg2: #17171d; --card: #1c1c24; --border: #2a2a35;
@@ -120,11 +142,16 @@
 
   footer { padding: 44px 0 60px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 
+  /* examples (enabled when real clips are added) */
+  .examples-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .examples-grid video { width: 100%; aspect-ratio: 9/16; border-radius: 16px; border: 1px solid var(--border); background: #000; }
+
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; text-align: center; padding: 44px 0 60px; }
     .cta-row { justify-content: center; }
     .phone { margin-top: 20px; }
     .steps, .features { grid-template-columns: 1fr 1fr; }
+    .examples-grid { grid-template-columns: 1fr; max-width: 300px; margin: 0 auto; }
     .nav-links a:not(.btn) { display: none; }
   }
   @media (max-width: 540px) {
@@ -181,6 +208,23 @@
     </div>
   </div>
 </section>
+
+<!-- EXAMPLES SECTION — uncomment once real example clips exist.
+     Drop 3 vertical MP4s into /examples/ (e.g. examples/clip1.mp4). Clips MUST come from
+     footage with commercial-use rights: your own recordings, CC-BY (credit the source), or
+     public domain. NOT podcast/TV clips you don't own, NOT TED (non-commercial license).
+<section id="examples">
+  <div class="wrap">
+    <h2>Straight out of Clipbench.</h2>
+    <p class="section-sub">Unedited exports — captions, crop, and timing exactly as the app produced them.</p>
+    <div class="examples-grid">
+      <video src="examples/clip1.mp4" controls muted playsinline preload="metadata"></video>
+      <video src="examples/clip2.mp4" controls muted playsinline preload="metadata"></video>
+      <video src="examples/clip3.mp4" controls muted playsinline preload="metadata"></video>
+    </div>
+  </div>
+</section>
+-->
 
 <section id="compare">
   <div class="wrap">
